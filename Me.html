@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ּ𝄢𖦹.☘︎ Nasrallah˖࣪ ִֶָ☾.一站式</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg:        #0a0b0f;
+      --bg2:       #0f1117;
+      --bg3:       #141720;
+      --card:      #161922;
+      --border:    #1e2130;
+      --amber:     #f4a843;
+      --amber-dim: #c97b2a;
+      --amber-glow:#f4a84322;
+      --cream:     #e8dcc8;
+      --muted:     #7a8099;
+      --white:     #f0ece4;
+    }
+
+    body.theme-light {
+      --bg: #f4f5f8;
+      --bg2: #eef0f4;
+      --bg3: #e0e4eb;
+      --card: #ffffff;
+      --border: #d3d7df;
+      --amber: #8c7f58;
+      --amber-dim: #7f7149;
+      --amber-glow: #8c7f5822;
+      --cream: #1f242c;
+      --muted: #5f6671;
+      --white: #101820;
+    }
+
+    body.theme-redblack {
+      --bg: #0b0505;
+      --bg2: #120707;
+      --bg3: #1f0909;
+      --card: #17090c;
+      --border: #2d0f0f;
+      --amber: #f64b4b;
+      --amber-dim: #b03333;
+      --amber-glow: #f64b4b22;
+      --cream: #f6f4f0;
+      --muted: #bda8a0;
+      --white: #fbf8f4;
+    }
+
+    body.theme-silverblue {
+      --bg: #0f1726;
+      --bg2: #1d2b44;
+      --bg3: #233552;
+      --card: #18263c;
+      --border: #2a3a54;
+      --amber: #a6c9ff;
+      --amber-dim: #7d9ed6;
+      --amber-glow: #a6c9ff22;
+      --cream: #e8eff9;
+      --muted: #9bb0c8;
+      --white: #f7fbff;
+    }
+
+    body.theme-yellowblack {
+      --bg: #080807;
+      --bg2: #10100f;
+      --bg3: #181715;
+      --card: #161410;
+      --border: #2b2a27;
+      --amber: #f6d73e;
+      --amber-dim: #b59f2d;
+      --amber-glow: #f6d73e22;
+      --cream: #f8f2d1;
+      --muted: #c5b884;
+      --white: #fef8e2;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--amber-dim); border-radius: 2px; }
+
+    /* ── NAVBAR ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.2rem 3rem;
+      background: rgba(10,11,15,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'Cinzel', serif;
+      font-size: 1.1rem;
+      color: var(--amber);
+      letter-spacing: 0.12em;
+      text-decoration: none;
+    }
+    .theme-select {
+      border: 1px solid rgba(244,168,67,0.35);
+      background: rgba(255,255,255,0.04);
+      color: var(--cream);
+      padding: 0.7rem 1rem;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: background 0.25s ease, transform 0.25s ease, color 0.25s ease;
+      appearance: none;
+      min-width: 170px;
+    }
+    .theme-select:hover {
+      background: rgba(244,168,67,0.15);
+      transform: translateY(-1px);
+    }
+    .theme-select:focus-visible {
+      outline: 2px solid var(--amber);
+      outline-offset: 3px;
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: var(--amber);
+      transition: width 0.25s ease, left 0.25s ease;
+    }
+    .nav-links a:hover {
+      color: var(--amber);
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+      left: 0;
+    }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    /* star field */
+    #stars {
+      position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(1px 1px at 15% 12%, rgba(244,168,67,0.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 72% 8%,  rgba(240,236,228,0.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 33% 28%, rgba(240,236,228,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 88% 22%, rgba(244,168,67,0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 5%  65%, rgba(240,236,228,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 55% 42%, rgba(240,236,228,0.2) 0%, transparent 100%),
+        radial-gradient(1px 1px at 92% 58%, rgba(244,168,67,0.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 22% 78%, rgba(240,236,228,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 67% 88%, rgba(244,168,67,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 40% 95%, rgba(240,236,228,0.2) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 78% 72%, rgba(244,168,67,0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 10% 48%, rgba(240,236,228,0.25) 0%, transparent 100%),
+        radial-gradient(1px 1px at 50% 18%, rgba(240,236,228,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 83% 40%, rgba(240,236,228,0.2) 0%, transparent 100%),
+        radial-gradient(1px 1px at 28% 55%, rgba(244,168,67,0.35) 0%, transparent 100%);
+      animation: star-twinkle 12s ease-in-out infinite;
+    }
+
+    /* glowing ambient behind moon */
+    .hero-glow {
+      position: absolute;
+      width: 420px; height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(244,168,67,0.07) 0%, transparent 70%);
+      top: 50%; left: 50%;
+      transform: translate(-50%, -60%);
+      pointer-events: none;
+      animation: hero-glow 8s ease-in-out infinite;
+    }
+
+    /* crescent moon — the signature */
+    .moon {
+      position: relative; width: 90px; height: 90px; margin-bottom: 2.5rem;
+      animation: moon-pulse 4s ease-in-out infinite;
+    }
+    .moon::before {
+      content: '';
+      position: absolute; inset: 0;
+      border-radius: 50%;
+      background: var(--amber);
+      box-shadow:
+        0 0 30px rgba(244,168,67,0.5),
+        0 0 60px rgba(244,168,67,0.25),
+        0 0 100px rgba(244,168,67,0.1);
+    }
+    .moon::after {
+      content: '';
+      position: absolute;
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      background: var(--bg);
+      top: 6px; left: 18px;
+      box-shadow: -4px -4px 12px rgba(244,168,67,0.15);
+    }
+    @keyframes moon-pulse {
+      0%, 100% { filter: brightness(1);   transform: scale(1); }
+      50%       { filter: brightness(1.15); transform: scale(1.03); }
+    }
+    @keyframes star-twinkle {
+      0%, 100% { opacity: 0.95; }
+      50%      { opacity: 1; }
+    }
+    @keyframes hero-glow {
+      0%, 100% { transform: translate(-50%, -60%) scale(1); }
+      50%      { transform: translate(-50%, -60%) scale(1.06); }
+    }
+    @keyframes hero-pulse {
+      0%, 100% { transform: scale(1); }
+      50%      { transform: scale(1.02); }
+    }
+
+    .hero-eyebrow {
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 1rem;
+      animation: float 6s ease-in-out infinite;
+    }
+    .hero-dhikr {
+      font-size: 0.92rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(244,168,67,0.95);
+      margin-bottom: 1.4rem;
+      opacity: 0.92;
+      transition: opacity 0.35s ease;
+      display: inline-block;
+    }
+    .hadith-translation {
+      color: var(--muted);
+      margin-bottom: 1.3rem;
+      line-height: 1.8;
+      font-size: 0.95rem;
+    }
+    #hadith {
+      background: var(--bg2);
+    }
+    #hadith .playlist-card {
+      background: rgba(255,255,255,0.03);
+    }
+    .hero-name {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.1;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    .hero-name:hover {
+      color: #f5f5f5;
+      text-shadow:
+        0 0 8px rgba(255,255,255,0.9),
+        0 0 18px rgba(255,255,255,0.6),
+        0 0 30px rgba(0,0,0,0.8);
+    }
+    .hero-name span {
+      color: var(--amber);
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    .hero-name:hover span {
+      color: #f6f5f2;
+      text-shadow: 0 0 14px rgba(255,255,255,0.95);
+    }
+    .hero-subtitle {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      color: var(--muted);
+      font-weight: 300;
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.8;
+    }
+
+    /* typing tagline */
+    .hero-tagline {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--cream);
+      opacity: 0.7;
+      min-height: 1.6em;
+      margin-bottom: 2.8rem;
+    }
+    .cursor { color: var(--amber); animation: blink 1s step-end infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+    .hero-cta {
+      display: inline-block;
+      padding: 0.7rem 2.2rem;
+      border: 1px solid var(--amber);
+      color: var(--amber);
+      text-decoration: none;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: all 0.25s;
+      border-radius: 2px;
+      box-shadow: 0 0 35px rgba(244,168,67,0.08);
+      animation: hero-pulse 5s ease-in-out infinite;
+    }
+    .hero-cta:hover {
+      background: var(--amber);
+      color: var(--bg);
+      transform: scale(1.02);
+    }
+
+    .soft-float {
+      animation: soft-float 8s ease-in-out infinite;
+    }
+
+    @keyframes soft-float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .scroll-hint {
+      position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+      color: var(--muted); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+      animation: float 2.5s ease-in-out infinite;
+    }
+    .scroll-hint::after {
+      content: '';
+      display: block; width: 1px; height: 36px;
+      background: linear-gradient(to bottom, var(--amber-dim), transparent);
+    }
+    @keyframes float { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} }
+
+    /* ── SECTION BASE ── */
+    section { padding: 6rem 2rem; }
+    .section-inner { max-width: 980px; margin: 0 auto; }
+
+    .spotify-card {
+      position: relative;
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025));
+      border: 1px solid rgba(244,168,67,0.22);
+      border-radius: 18px;
+      padding: 2rem;
+      box-shadow: 0 24px 55px rgba(0,0,0,0.18);
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+    }
+    .spotify-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(244,168,67,0.15), transparent 35%);
+      pointer-events: none;
+    }
+    .spotify-card > * {
+      position: relative;
+      z-index: 1;
+    }
+    .spotify-card h3 {
+      font-size: clamp(1.25rem, 2vw, 1.45rem);
+      color: var(--white);
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.01em;
+    }
+    .spotify-card p {
+      color: var(--muted);
+      margin-bottom: 1.8rem;
+      line-height: 1.85;
+      max-width: 720px;
+    }
+    .playlist-switcher {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.8rem;
+    }
+    .playlist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.8rem;
+    }
+    .playlist-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 18px;
+      padding: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 210px;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .playlist-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(244,168,67,0.3);
+      box-shadow: 0 18px 32px rgba(0,0,0,0.16);
+    }
+    .playlist-card h4 {
+      margin: 0 0 0.5rem;
+      color: var(--white);
+      font-size: 1.05rem;
+      letter-spacing: 0.01em;
+    }
+    .playlist-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+    .playlist-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(244,168,67,0.18);
+      color: var(--amber);
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .spotify-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      border: 1px solid rgba(244,168,67,0.35);
+      background: rgba(244,168,67,0.12);
+      color: var(--white);
+      padding: 1rem 1.4rem;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+      min-height: 52px;
+      width: 100%;
+    }
+    .spotify-action:hover {
+      transform: translateY(-2px);
+      background: rgba(244,168,67,0.2);
+      box-shadow: 0 14px 32px rgba(244,168,67,0.14);
+    }
+    .spotify-player {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      overflow: hidden;
+      background: var(--bg2);
+    }
+    .spotify-note {
+      margin-top: 1rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 0.6rem;
+    }
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      color: var(--white);
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 3rem;
+    }
+    .section-title .section-icon {
+      display: inline-block;
+      margin-right: 0.75rem;
+      font-size: 1.1em;
+      color: var(--amber);
+      position: relative;
+      top: -1px;
+    }
+
+    .divider {
+      width: 40px; height: 1px;
+      background: var(--amber);
+      margin: 1rem 0 3rem;
+      opacity: 0.6;
+    }
+
+    /* ── ABOUT ── */
+    #about { background: var(--bg2); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+      font-size: 0.97rem;
+      line-height: 1.85;
+    }
+    .about-text p strong { color: var(--cream); font-weight: 500; }
+
+    .about-quote {
+      border-left: 2px solid var(--amber);
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--cream);
+      font-size: 0.95rem;
+      opacity: 0.85;
+      animation: soft-float 6s ease-in-out infinite;
+    }
+
+    .about-sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .info-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.4rem 1.6rem;
+    }
+    .info-card h4 {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 0.8rem;
+    }
+    .info-card p {
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.7;
+    }
+    .info-card p span { color: var(--cream); }
+
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+    .tag {
+      padding: 0.25rem 0.7rem;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      font-size: 0.75rem;
+      color: var(--muted);
+      transition: all 0.2s;
+    }
+    .tag:hover { border-color: var(--amber); color: var(--amber); }
+
+    /* golden formula box */
+    .formula-box {
+      background: linear-gradient(135deg, rgba(244,168,67,0.06), rgba(244,168,67,0.02));
+      border: 1px solid rgba(244,168,67,0.25);
+      border-radius: 4px;
+      padding: 1.6rem 2rem;
+      margin-top: 2rem;
+      font-family: 'Cinzel', serif;
+      text-align: center;
+    }
+    .formula-box .formula-text {
+      font-size: 1.05rem;
+      color: var(--amber);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    .formula-box .formula-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── HOBBIES ── */
+    #hobbies { background: var(--bg); }
+
+    .hobbies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.2rem;
+    }
+    .hobby-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.6rem;
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+      position: relative;
+      overflow: hidden;
+      transform: translateZ(0);
+      animation: soft-float 8s ease-in-out infinite;
+    }
+    .hobby-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--amber), transparent);
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+    .hobby-card:hover { border-color: rgba(244,168,67,0.3); transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,0,0,0.12); }
+    .hobby-card:hover::before { opacity: 1; }
+
+    .hobby-icon { font-size: 1.6rem; margin-bottom: 0.8rem; }
+    .hobby-name {
+      font-family: 'Cinzel', serif;
+      font-size: 0.95rem;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+    }
+    .hobby-desc {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ── SKILLS / CERTS ── */
+    #skills { background: var(--bg2); }
+
+    .skills-split {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 4rem;
+    }
+
+    .skill-item { margin-bottom: 1.6rem; }
+    .skill-header {
+      display: flex; justify-content: space-between;
+      font-size: 0.82rem; color: var(--cream);
+      margin-bottom: 0.4rem;
+    }
+    .skill-pct { color: var(--amber); }
+    .skill-bar {
+      height: 2px;
+      background: var(--border);
+      border-radius: 1px;
+      overflow: hidden;
+    }
+    .skill-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--amber-dim), var(--amber));
+      border-radius: 1px;
+      transform-origin: left;
+      animation: fill-bar 1.2s ease-out forwards;
+      transform: scaleX(0);
+    }
+    @keyframes fill-bar { to { transform: scaleX(1); } }
+
+    .cert-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.4rem 1.6rem;
+      margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 1rem;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+      animation: soft-float 7.5s ease-in-out infinite;
+    }
+    .cert-card:hover { border-color: rgba(244,168,67,0.3); transform: translateY(-2px); box-shadow: 0 12px 30px rgba(0,0,0,0.12); }
+    .cert-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--amber); flex-shrink: 0;
+      box-shadow: 0 0 8px var(--amber);
+    }
+    .cert-info h4 {
+      font-size: 0.88rem; color: var(--cream);
+      margin-bottom: 0.15rem; font-weight: 500;
+    }
+    .cert-info p { font-size: 0.75rem; color: var(--muted); }
+    .cert-badge {
+      margin-left: auto;
+      font-size: 0.65rem; padding: 0.2rem 0.5rem;
+      border: 1px solid rgba(244,168,67,0.4);
+      color: var(--amber); border-radius: 2px;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    /* ── PHILOSOPHY / POEM ── */
+    #philosophy { background: var(--bg); }
+
+    .philosophy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .metavision-box {
+      background: linear-gradient(135deg, rgba(244,168,67,0.05), transparent);
+      border: 1px solid rgba(244,168,67,0.2);
+      border-radius: 4px;
+      padding: 2.5rem;
+    }
+    .metavision-box .mv-label {
+      font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--amber); margin-bottom: 1rem;
+    }
+    .metavision-box .mv-text {
+      font-family: 'Cinzel', serif;
+      font-size: 1.1rem;
+      color: var(--white);
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+    }
+    .metavision-box .mv-sub {
+      font-size: 0.83rem;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .poem-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2.5rem;
+      direction: rtl;
+    }
+    .poem-box .poem-label {
+      font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--amber); margin-bottom: 1.2rem;
+      direction: ltr; text-align: right;
+    }
+    .poem-box .poem-text {
+      font-family: 'Amiri', serif;
+      font-size: 1rem;
+      color: var(--cream);
+      line-height: 2;
+      text-align: right;
+    }
+
+    /* ── JOURNAL ── */
+    #journal { background: var(--bg2); }
+
+    .journal-entries {
+      display: flex; flex-direction: column; gap: 1.2rem;
+    }
+    .entry-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+      animation: soft-float 9s ease-in-out infinite;
+    }
+    .entry-card:hover { border-color: rgba(244,168,67,0.25); transform: translateY(-3px); box-shadow: 0 18px 35px rgba(0,0,0,0.1); }
+    .entry-header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.2rem 1.6rem;
+      cursor: pointer;
+    }
+    .entry-date {
+      font-size: 0.7rem; letter-spacing: 0.15em;
+      color: var(--amber); text-transform: uppercase;
+    }
+    .entry-title {
+      font-size: 0.92rem; color: var(--cream);
+      font-weight: 500; margin-top: 0.2rem;
+    }
+    .entry-toggle {
+      color: var(--muted); font-size: 1.2rem;
+      transition: transform 0.25s; flex-shrink: 0;
+    }
+    .entry-card.open .entry-toggle { transform: rotate(45deg); }
+    .entry-body {
+      padding: 0 1.6rem;
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+    .entry-card.open .entry-body {
+      max-height: 400px;
+      padding: 0 1.6rem 1.6rem;
+      overflow-y: auto;
+    }
+    .entry-body p {
+      font-size: 0.87rem; color: var(--muted);
+      line-height: 1.85; margin-bottom: 0.8rem;
+    }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--bg); }
+
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-tagline {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      color: var(--white);
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    .contact-sub {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+    .contact-links { display: flex; flex-direction: column; gap: 1rem; }
+    .contact-link {
+      display: flex; align-items: center; gap: 1rem;
+      color: var(--muted); text-decoration: none;
+      font-size: 0.88rem;
+      transition: color 0.2s, transform 0.2s, box-shadow 0.2s;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: var(--card);
+      transition: all 0.2s;
+    }
+    .contact-link:hover { border-color: rgba(244,168,67,0.3); color: var(--amber); transform: translateY(-2px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
+    .contact-link .link-icon { font-size: 1rem; width: 20px; text-align: center; }
+
+    .contact-quote-col {
+      display: flex; flex-direction: column; gap: 1.5rem;
+      animation: soft-float 8.5s ease-in-out infinite;
+    }
+    .float-quote {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 2px solid var(--amber);
+      border-radius: 0 4px 4px 0;
+      padding: 1.2rem 1.4rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.75;
+      font-style: italic;
+      animation: soft-float 7.2s ease-in-out infinite;
+    }
+    .float-quote span { color: var(--cream); }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 2.5rem 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      background: var(--bg);
+    }
+    footer p {
+      font-size: 0.75rem; color: var(--muted);
+      letter-spacing: 0.06em;
+    }
+    footer span { color: var(--amber); }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      .about-grid,
+      .skills-split,
+      .philosophy-grid,
+      .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
+      section { padding: 4rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a class="nav-logo" href="#hero">NAS</a>
+  <div style="display:flex;align-items:center;gap:1rem;">
+    <select id="themeSelect" class="theme-select" aria-label="Choose theme">
+      <option value="dark">Dark</option>
+      <option value="light">Light</option>
+      <option value="redblack">Red / Black</option>
+      <option value="silverblue">Silver / Blue</option>
+      <option value="yellowblack">Yellow / Black</option>
+    </select>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#journal">Journal</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div id="stars"></div>
+  <div class="hero-glow"></div>
+
+  <div class="moon"></div>
+
+  <p class="hero-eyebrow">Algeria · Science · Self</p>
+  <p class="hero-dhikr reveal" id="heroDhikr">اللهم صل وسلم على نبينا محمد</p>
+  <h1 class="hero-name">Nasr<span>allah</span></h1>
+  <p class="hero-subtitle">
+    A first-year physics student, programmer, poet, and deep thinker
+    from Tlemcen — building himself one honest day at a time.
+  </p>
+  <p class="hero-tagline" id="tagline"><span class="cursor">|</span></p>
+  <a href="#about" class="hero-cta">Discover More</a>
+
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <p class="section-label reveal">Who I Am</p>
+    <h2 class="section-title reveal"><span class="section-icon">✦</span>More than what<br>the grades say.</h2>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          My name is <strong>Nasrallah</strong>. I study LMD Physics in Oran,
+          Algeria — but that barely describes me. I'm the kind of person
+          who writes poetry at fajr, analyzes chess games for fun, reads manga
+          between revision sessions, and feeds stray cats in dorm hallways.
+        </p>
+        <p>
+          I grew up in <strong>Remchi, Tlemcen</strong>, the kind of quiet place
+          that teaches you to find richness inside yourself. I learned early that
+          the most interesting conversations happen at night, and that coffee isn't
+          just a drink — it's a symbol of who I am when I'm most myself.
+        </p>
+        <p>
+          I've been through real struggle. Academically difficult years, loneliness,
+          self-doubt. But I kept writing. Kept praying. Kept moving. Not because
+          I was fearless — but because stopping felt worse than continuing.
+        </p>
+
+        <div class="about-quote">
+          "Life keeps moving and I keep evolving. I only failed academically but
+          that doesn't stop me."
+        </div>
+
+        <p>
+          I believe in <strong>depth over performance</strong>. I'd rather have
+          one real conversation than a hundred shallow ones. I help people not
+          because it looks good, but because something in me genuinely needs to.
+        </p>
+
+        <div class="formula-box reveal">
+          <div class="formula-text">Spirituality × Internal Motivation × Existence</div>
+          <div class="formula-sub">= The Real Nasrallah &nbsp;·&nbsp; My golden formula</div>
+        </div>
+      </div>
+
+      <div class="about-sidebar reveal">
+        <div class="info-card">
+          <h4>Quick Profile</h4>
+          <p>📍 Tlemcen / Oran, Algeria</p>
+          <p style="margin-top:0.4rem">🎓 <span>LMD Physics · Year 1</span></p>
+          <p style="margin-top:0.4rem">🌐 Arabic · English · (learning French)</p>
+          <p style="margin-top:0.4rem">☀️ Born: <span>October 29, 2007</span></p>
+        </div>
+
+        <div class="info-card">
+          <h4>Current Focus</h4>
+          <p>C# certification via Microsoft Learn, MATLAB Academy Onramps completed (MATLAB Onramp, MATLAB Coder Onramp, Machine Learning Onramp), rebuilding study habits, and becoming more consistent with prayer and reading.</p>
+          <p style="margin-top:0.9rem; font-size:0.92rem; color:var(--muted);">Currently doing:</p>
+          <ul style="margin-top:0.5rem; padding-left:1rem; color:var(--muted); font-size:0.92rem; line-height:1.7;">
+            <li><a href="https://skills.yourlearning.ibm.com/activity/PLAN-8AF5B141EC32" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:underline;">Lifelong Professional Skills (IBM SkillsBuild)</a></li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h4>Core Values</h4>
+          <div class="tag-cloud">
+            <span class="tag">Honesty</span>
+            <span class="tag">Depth</span>
+            <span class="tag">Loyalty</span>
+            <span class="tag">Faith</span>
+            <span class="tag">Self-awareness</span>
+            <span class="tag">Kindness</span>
+            <span class="tag">Growth</span>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h4>Metavision</h4>
+          <p>"To become the most real version of myself, so that everything I touch becomes real too."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HADITH -->
+<section id="hadith">
+  <div class="section-inner">
+    <p class="section-label reveal">Hadith</p>
+    <h2 class="section-title reveal"><span class="section-icon">🕋</span>Random Hadith</h2>
+    <div class="spotify-card reveal" style="padding:2rem 2rem 1.5rem;">
+      <p class="spotify-note" style="margin-bottom:1.6rem; color: var(--white); font-size:1rem; line-height:1.8;">
+        Refresh the Hadith below whenever you want a new reminder.
+      </p>
+      <div class="playlist-card" style="border:none; background: rgba(255,255,255,0.04); box-shadow:none; padding:1.5rem 1.6rem;">
+        <p id="hadithText" style="color: var(--cream); font-size:1rem; line-height:1.85; margin-bottom:1.1rem;">حديث سيظهر هنا.</p>
+        <p id="hadithTranslation" class="hadith-translation">Translation will appear here.</p>
+        <button class="spotify-action" type="button" onclick="showRandomHadith()">❖ New Hadith</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<section id="hobbies">
+  <div class="section-inner">
+    <p class="section-label reveal">What I Live For</p>
+    <h2 class="section-title reveal"><span class="section-icon">♟️</span>Hobbies & Interests</h2>
+
+    <div class="hobbies-grid">
+
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">♟️</div>
+        <div class="hobby-name">Chess</div>
+        <div class="hobby-desc">I play regularly, analyze games, and watch grandmaster matches. Chess isn't just a game — it's how I think. Pattern recognition, long-term strategy, ego discipline.</div>
+      </div>
+
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">💻</div>
+        <div class="hobby-name">Programming</div>
+        <div class="hobby-desc">C is my main language — I built calculators, TPs, and more. Now expanding into C# through Microsoft certifications. I also completed MATLAB Onramp at 100%.</div>
+      </div>
+
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">✍️</div>
+        <div class="hobby-name">Diary & Journaling</div>
+        <div class="hobby-desc">My most consistent practice. I've been writing since 2023 across hundreds of entries. This site itself was born from my diary. Writing is how I understand myself.</div>
+      </div>
+
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">🌙</div>
+        <div class="hobby-name">Arabic Poetry</div>
+        <div class="hobby-desc">I write poems in فصحى العربية, often at fajr or late at night. They carry my real emotions — grief, determination, love, faith. Words are where I'm most honest.</div>
+      </div>
+
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">📖</div>
+        <div class="hobby-name">Reading</div>
+        <div class="hobby-desc">Books like نادي الخامسة صباحا and لكنّك الله moved me deeply. I also dive into manga — Blue Lock especially shaped my philosophy of ego and self-trust.</div>
+      </div>
+
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">📺</div>
+        <div class="hobby-name">Anime & Film</div>
+        <div class="hobby-desc">Serial Experiments Lain, Evangelion, Chainsaw Man, Monster, JJK, Ghibli films. I don't just watch — I find myself in these stories. Lain hit different.</div>
+      </div>
+
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">🥊</div>
+        <div class="hobby-name">Shadow Boxing & Calisthenics</div>
+        <div class="hobby-desc">3-minute shadow boxing sessions, push/pull/leg splits, pushups, squats. I work out because I respect my body — not to show anyone. The discipline is the point.</div>
+      </div>
+
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">📿</div>
+        <div class="hobby-name">Quran & Spirituality</div>
+        <div class="hobby-desc">Reading Quran gives me what nothing else can. Certain surahs I return to again and again — Al-Kahf, Ibrahim, Luqman. It's not habit. It's anchor.</div>
+      </div>
+
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">🎮</div>
+        <div class="hobby-name">Gaming</div>
+        <div class="hobby-desc">Critical Ops, Yakuza 0, Ultrakill, Katana Zero, Celeste, Persona 3, eFootball. Games let me enter other worlds when this one gets too loud.</div>
+      </div>
+
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">🎵</div>
+        <div class="hobby-name">Music & Listening</div>
+        <div class="hobby-desc">Nujabes is a whole mood. Also 2Pac, Nas, Eminem, breakcore, dreamcore. Music and my emotions are deeply linked — the playlist reflects the inner weather.</div>
+      </div>
+
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">🐱</div>
+        <div class="hobby-name">Caring for Strays</div>
+        <div class="hobby-desc">Luna, unnamed kittens, the little white one in the campus canteen — I feed them, let them into my room. Something about caring for small dependent things feels right.</div>
+      </div>
+
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">⌨️</div>
+        <div class="hobby-name">Fast Typing</div>
+        <div class="hobby-desc">Hit 62 WPM as a personal record and still working on it. Speed typing is one of those small skills that quietly says something about your attention and consistency.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MUSIC -->
+<section id="music">
+  <div class="section-inner">
+    <p class="section-label reveal">Listen</p>
+    <h2 class="section-title reveal"><span class="section-icon">🎧</span>Spotify Playlists</h2>
+    <div class="spotify-card reveal">
+      <h3>Spotify playlist collection</h3>
+      <p>Choose a core below to switch the embedded playlist inside the page.</p>
+      <div class="playlist-grid">
+        <div class="playlist-card">
+          <span class="playlist-icon">⚡</span>
+          <h4>Breakcore</h4>
+          <p>Powerful beats and jagged energy for intense focus and late-night drive.</p>
+          <button class="spotify-action" type="button" onclick="switchSpotifyPlaylist('322R9C6SzpKNKGHSYQ7nL1')">Play Breakcore</button>
+        </div>
+        <div class="playlist-card">
+          <span class="playlist-icon">🎌</span>
+          <h4>Japanese songs</h4>
+          <p>Calm, melodic, and cinematic tracks that carry a soft aesthetic and emotion.</p>
+          <button class="spotify-action" type="button" onclick="switchSpotifyPlaylist('42YZOg8ATHhb3znBqOGNB0')">Play Japanese songs</button>
+        </div>
+        <div class="playlist-card">
+          <span class="playlist-icon">✨</span>
+          <h4>Elegance</h4>
+          <p>Sophisticated vibes with smooth arrangements and elegant musical flow.</p>
+          <button class="spotify-action" type="button" onclick="switchSpotifyPlaylist('3uaYvgH80T1menMjbol4lk')">Play Elegance</button>
+        </div>
+        <div class="playlist-card">
+          <span class="playlist-icon">🕋</span>
+          <h4>Quran</h4>
+          <p>Reflective recitations and spiritual calm for quiet moments and prayer.</p>
+          <button class="spotify-action" type="button" onclick="switchSpotifyPlaylist('4sgxmOLBjldeygmFKniWRi')">Play Quran</button>
+        </div>
+        <div class="playlist-card">
+          <span class="playlist-icon">🌌</span>
+          <h4>Dreamcore</h4>
+          <p>Atmospheric, ethereal tracks that feel like a dream in motion.</p>
+          <button class="spotify-action" type="button" onclick="switchSpotifyPlaylist('3Qi3obxhqb17bNghIRQ5za')">Play Dreamcore</button>
+        </div>
+      </div>
+      <div>
+        <iframe id="spotifyIframe" class="spotify-player" src="https://open.spotify.com/embed/playlist/322R9C6SzpKNKGHSYQ7nL1?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <p class="spotify-note">Tip: use the buttons to switch playlists inside the page, then play directly from the embedded Spotify player.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS & CERTS -->
+<section id="skills">
+  <div class="section-inner">
+    <p class="section-label reveal">Technical Side</p>
+    <h2 class="section-title reveal"><span class="section-icon">⚙️</span>Skills & Certifications</h2>
+
+    <div class="skills-split">
+      <div class="reveal">
+        <h3 style="font-family:'Cinzel',serif;font-size:0.9rem;color:var(--muted);letter-spacing:0.1em;margin-bottom:1.8rem;text-transform:uppercase;">Technical Skills</h3>
+
+        <div class="skill-item">
+          <div class="skill-header"><span>C Programming</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>MATLAB</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>C# (in progress)</span><span class="skill-pct">45%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:45%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Classical Mechanics</span><span class="skill-pct">65%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Mathematics (Analysis / Algebra)</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Human Pattern Recognition</span><span class="skill-pct">95%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+        </div>
+
+        <h3 style="font-family:'Cinzel',serif;font-size:0.9rem;color:var(--muted);letter-spacing:0.1em;margin: 2.5rem 0 1.8rem;text-transform:uppercase;">Soft Skills</h3>
+
+        <div class="skill-item">
+          <div class="skill-header"><span>Deep Listening & Empathy</span><span class="skill-pct">97%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:97%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Self-Reflection</span><span class="skill-pct">99%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:99%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Arabic Writing & Poetry</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>English Communication</span><span class="skill-pct">82%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h3 style="font-family:'Cinzel',serif;font-size:0.9rem;color:var(--muted);letter-spacing:0.1em;margin-bottom:1.8rem;text-transform:uppercase;">Certifications</h3>
+
+        <div class="cert-card">
+          <div class="cert-dot"></div>
+          <div class="cert-info">
+            <h4>MATLAB Onramp</h4>
+            <p>MathWorks Official · Completed 100%</p>
+          </div>
+          <div class="cert-badge">Earned ✓</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-dot"></div>
+          <div class="cert-info">
+            <h4>MATLAB Coder Onramp</h4>
+            <p>MathWorks Official · Completed 100%</p>
+          </div>
+          <div class="cert-badge">Earned ✓</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-dot"></div>
+          <div class="cert-info">
+            <h4>Machine Learning Onramp</h4>
+            <p>MathWorks Official · Completed 100%</p>
+          </div>
+          <div class="cert-badge">Earned ✓</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-dot" style="background:var(--amber-dim);box-shadow:0 0 8px var(--amber-dim)"></div>
+          <div class="cert-info">
+            <h4>C# Fundamentals</h4>
+            <p>Microsoft Learn · freeCodeCamp · In Progress</p>
+          </div>
+          <div class="cert-badge" style="border-color:var(--border);color:var(--muted)">In Progress</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-dot" style="background:var(--amber-dim);box-shadow:0 0 8px var(--amber-dim)"></div>
+          <div class="cert-info">
+            <h4>MATLAB Academy Onramps</h4>
+            <p>In Progress · preparing for certificates</p>
+            <p><a href="https://matlabacademy.mathworks.com/details/signal-processing-onramp/signalprocessing" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">Signal Processing Onramp</a></p>
+            <p><a href="https://matlabacademy.mathworks.com/details/control-design-onramp-with-simulink/controls" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">Control Design Onramp with Simulink</a></p>
+            <p><a href="https://matlabacademy.mathworks.com/details/simulink-onramp/simulink" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">Simulink Onramp</a></p>
+            <p><a href="https://matlabacademy.mathworks.com/details/machine-learning-onramp/machinelearning" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">Machine Learning Onramp</a></p>
+          </div>
+          <div class="cert-badge" style="border-color:var(--border);color:var(--muted)">In Progress</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-dot" style="background:var(--amber-dim);box-shadow:0 0 8px var(--amber-dim)"></div>
+          <div class="cert-info">
+            <h4>Learning & Career Growth</h4>
+            <p>In Progress · courses and certifications I'm currently studying</p>
+            <p><a href="https://learning.edx.org/course/course-v1:HarvardX+CS50P+Python/home" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">CS50's Introduction to Programming with Python</a></p>
+            <p><a href="https://cs50.harvard.edu/x/" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">CS50x 2026</a></p>
+            <p><a href="https://www.kaggle.com/learn/intro-to-machine-learning" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">Kaggle Intro to Machine Learning</a></p>
+            <p><a href="https://www.kaggle.com/learn/pandas" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">Kaggle Learn Pandas</a></p>
+            <p><a href="https://www.kaggle.com/learn/data-visualization" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">Kaggle Data Visualization</a></p>
+            <p><a href="https://www.kaggle.com/learn/python" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">Kaggle Learn Python</a></p>
+            <p><a href="https://www.freecodecamp.org/learn/responsive-web-design-v9/" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">freeCodeCamp Responsive Web Design</a></p>
+            <p><a href="https://www.freecodecamp.org/learn/javascript-v9/" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">freeCodeCamp JavaScript Certification</a></p>
+            <p><a href="https://www.freecodecamp.org/learn/python-v9/" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">freeCodeCamp Python Certification</a></p>
+            <p><a href="https://learn.microsoft.com/training/" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">Microsoft Learn Training</a></p>
+            <p><a href="https://skillsbuild.org/" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">IBM SkillsBuild</a></p>
+            <p><a href="https://www.netacad.com/courses/networking-basics?courseLang=en-US" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">Cisco Networking Basics</a></p>
+            <p><a href="https://www.netacad.com/courses/cybersecurity-essentials?courseLang=en-US" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">Cisco Cybersecurity Essentials</a></p>
+            <p><a href="https://www.netacad.com/courses/python-essentials-1?courseLang=en-US" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">Cisco Python Essentials 1</a></p>
+            <p><a href="https://www.netacad.com/courses/python-essentials-2?courseLang=en-US" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">Cisco Python Essentials 2</a></p>
+            <p><a href="https://www.life-global.org/" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">HP LIFE</a></p>
+            <p><a href="https://grow.google/intl/mena/" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">Google Skills - مهارات من Google</a></p>
+            <p><a href="https://learn.github.com/skills" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline;">GitHub Learn Skills</a></p>
+          </div>
+          <div class="cert-badge" style="border-color:var(--border);color:var(--muted)">In Progress</div>
+        </div>
+
+        <div class="cert-card" style="margin-top:2rem;">
+          <div class="cert-dot" style="background:var(--muted);box-shadow:none"></div>
+          <div class="cert-info">
+            <h4>C Programming Fundamentals</h4>
+            <p>University coursework · LMD Year 1</p>
+          </div>
+        </div>
+
+        <div style="margin-top:2.5rem;padding:1.4rem;background:var(--card);border:1px solid var(--border);border-radius:4px;">
+          <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;">
+            I document my learning not as trophies, but as proof of direction.
+            Each certification is a step in a longer road I'm building intentionally,
+            not racing through.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY & POEM -->
+<section id="philosophy">
+  <div class="section-inner">
+    <p class="section-label reveal">Inside My Head</p>
+    <h2 class="section-title reveal"><span class="section-icon">🧠</span>Who I Am</h2>
+
+    <div class="philosophy-grid">
+      <div class="metavision-box reveal">
+        <div class="mv-label">My Identity</div>
+        <div class="mv-text">
+          <p>☪️ Islamic Foundation</p>
+          <p>Your compass. Everything else sits on top of this.</p>
+        </div>
+        <div class="mv-sub">
+          <p>⚙️ Stoicism</p>
+          <ul>
+            <li>Discipline</li>
+            <li>Responsibility</li>
+            <li>Endurance</li>
+            <li>Controlling your reactions</li>
+          </ul>
+          <p>🏛️ Dark Academia</p>
+          <p>Not just the clothes. The love of:</p>
+          <ul>
+            <li>Libraries 📚</li>
+            <li>Old books</li>
+            <li>Fountain pens</li>
+            <li>Journaling</li>
+            <li>Classical music (sometimes)</li>
+            <li>Late-night studying</li>
+            <li>Rain on windows</li>
+            <li>Learning for the joy of understanding</li>
+            <li>Becoming an educated gentleman</li>
+          </ul>
+          <p>You don't want knowledge only for money. You want knowledge because it's beautiful.</p>
+        </div>
+      </div>
+
+      <div class="metavision-box reveal">
+        <div class="mv-label">My Way</div>
+        <div class="mv-text">
+          <p>🌧️ Romanticism</p>
+          <p>This is why you love fog, empty streets, night buses, rain, quiet cafés, emotional depth, poetry, atmosphere.</p>
+        </div>
+        <div class="mv-sub">
+          <p>🔧 Engineering Minimalism</p>
+          <p>You like beauty, but also functionality. A beautiful website, a clean workspace, a well-organized notebook, a machine that's elegant because it works.</p>
+          <p>📖 Classical Scholar Mentality</p>
+          <p>You admire people who know a little about many things. You want to talk about Qur'an, Arabic poetry, electromechanics, programming, philosophy, chess, psychology without pretending to know everything.</p>
+          <p>♟️ Strategic Thinking</p>
+          <p>You naturally think in patterns, systems, and long-term consequences.</p>
+          <p>🌱 Self-Construction</p>
+          <blockquote>“Who am I becoming?”</blockquote>
+          <p>You don't just want success. You want to craft yourself — the sculptor and the marble both.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNAL -->
+<section id="journal">
+  <div class="section-inner">
+    <p class="section-label reveal">From the Pages</p>
+    <h2 class="section-title reveal"><span class="section-icon">📓</span>Journal Highlights</h2>
+
+    <div class="journal-entries">
+
+      <div class="entry-card reveal">
+        <div class="entry-header" onclick="toggleEntry(this)">
+          <div>
+            <div class="entry-date">June 27, 2026</div>
+            <div class="entry-title">A certificate, a friend, and an honest night</div>
+          </div>
+          <div class="entry-toggle">+</div>
+        </div>
+        <div class="entry-body">
+          <p>Today I finished a 2-hour MATLAB course and got the certificate. I also helped my friend Mehdi set up a PS3 game — it took way too much time, but I did it. After telling my mom and dad about the certificate, they got genuinely happy. That made something in me soften.</p>
+          <p>I spent most of my time searching for what I need to be better and how to move forward. Not every day has a dramatic realization. Sometimes it's just: keep going, and let people be proud of you for the small things.</p>
+        </div>
+      </div>
+
+      <div class="entry-card reveal">
+        <div class="entry-header" onclick="toggleEntry(this)">
+          <div>
+            <div class="entry-date">June 20, 2026</div>
+            <div class="entry-title">The last night in the dorm — B23 28</div>
+          </div>
+          <div class="entry-toggle">+</div>
+        </div>
+        <div class="entry-body">
+          <p>This is the last day I sleep in this dirty bed, in this room, in this dorm I hated and somehow also lived fully inside. I revised everything I could. I bought myself chocolate biscuits — an act of love for myself from myself.</p>
+          <p>I don't even know why I'm not so sad. I may cry and regret but I'm just... unbreakable, alhamdulilah. I know I tried my best. Life keeps moving and I keep evolving.</p>
+          <p style="color:var(--cream);font-style:italic;">...bye B23 28. It was a good journey.</p>
+        </div>
+      </div>
+
+      <div class="entry-card reveal">
+        <div class="entry-header" onclick="toggleEntry(this)">
+          <div>
+            <div class="entry-date">April 30, 2026</div>
+            <div class="entry-title">Coffee, chess, and my golden formula</div>
+          </div>
+          <div class="entry-toggle">+</div>
+        </div>
+        <div class="entry-body">
+          <p>Did chess, programming, minesweeper, and a puzzle today. Helped mom, did shadow boxing, took a shower, and had coffee while writing in my diary. Coffee is so important to me — it's a symbol of peace and my true self.</p>
+          <p>Today I found my ending formula: <em style="color:var(--amber)">Spirituality × Internal Motivation × Existence = The Real Nasr.</em> When all three align — I'm untouchable. That's not a mood. That's a state of being.</p>
+        </div>
+      </div>
+
+      <div class="entry-card reveal">
+        <div class="entry-header" onclick="toggleEntry(this)">
+          <div>
+            <div class="entry-date">March 7, 2026 — Ramadan</div>
+            <div class="entry-title">Blue Lock, C code, chess, and a quiet day</div>
+          </div>
+          <div class="entry-toggle">+</div>
+        </div>
+        <div class="entry-body">
+          <p>Spent most of the day reading Blue Lock and trying to replicate its concepts in my life — finding what genius means, understanding ego types. Made a calculator in C language. Played chess. Organized my environment to support productivity.</p>
+          <p>Fasting, but full of thought. Some days the most productive thing is understanding yourself a little better. That's enough.</p>
+        </div>
+      </div>
+
+      <div class="entry-card reveal">
+        <div class="entry-header" onclick="toggleEntry(this)">
+          <div>
+            <div class="entry-date">December 1, 2025</div>
+            <div class="entry-title">Luna came back</div>
+          </div>
+          <div class="entry-toggle">+</div>
+        </div>
+        <div class="entry-body">
+          <p>I woke up at 2 AM to revise, then heard the adhan and went to pray fajr. In sujud, I thought of Luna — a month since I'd seen her. I whispered inside: I hope she comes back.</p>
+          <p>When I returned to my floor — she was there. She followed me to my room. She slept on my lap. Fed her fromage three times. I felt something soften inside me. Peace.</p>
+          <p style="color:var(--cream);font-style:italic;">"If she found her way to me today, she can find her way back again."</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-label reveal">Reach Out</p>
+    <h2 class="section-title reveal"><span class="section-icon">✉️</span>Let's Talk</h2>
+
+    <div class="contact-inner">
+      <div class="reveal">
+        <div class="contact-tagline">
+          I'm someone who values real conversation over small talk.
+        </div>
+        <p class="contact-sub">
+          Whether you're a fellow programmer, a chess player, someone who
+          relates to the journey written here, or just someone who wants to
+          say salam — I'm listening.
+        </p>
+
+        <div class="contact-links">
+          <a href="https://github.com/DOPAMINEDIAMOND" target="_blank" rel="noopener" class="contact-link">
+            <span class="link-icon">🐙</span>
+            GitHub — DOPAMINEDIAMOND
+          </a>
+          <a href="mailto:ninjamanmostakdim1@gmail.com" class="contact-link">
+            <span class="link-icon">📧</span>
+            Email — ninjamanmostakdim1@gmail.com
+          </a>
+          <a href="https://pin.it/6P4kRZ5l2" target="_blank" rel="noopener" class="contact-link">
+            <span class="link-icon">📌</span>
+            Pinterest — my pin
+          </a>
+          <a href="https://quran.com/" target="_blank" rel="noopener" class="contact-link">
+            <span class="link-icon">📖</span>
+            Quran — The Noble Quran
+          </a>
+          <a href="https://www.instagram.com/nasrallah2237/" target="_blank" rel="noopener" class="contact-link">
+            <span class="link-icon">📸</span>
+            Instagram — @nasrallah2237
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-quote-col reveal">
+        <div class="float-quote">
+          <span>"I don't own you or control you — everyone can like you and you choose the best man for you.</span> I currently try to be that man."
+        </div>
+        <div class="float-quote">
+          "The way I fill my time is to make my body match my thinking."
+        </div>
+        <div class="float-quote">
+          <span>"Not sure if I'm moving forward, but that's what logic says."</span> — and I trust logic when the heart is too loud.
+        </div>
+        <div class="float-quote">
+          "OH SO YOU MEAN I GOTTA REWIRE MY BRAIN INTO A STRONGER VERSION TO RESTART THIS YEAR"
+        </div>
+        <div class="float-quote">
+          "I gotta rewire my brain into a stronger version."
+        </div>
+        <div class="float-quote">
+          "Metavision."
+        </div>
+        <div class="float-quote">
+          "What am I supposed to do to be called successful?"
+        </div>
+        <div class="float-quote">
+          "Based on my whole diary... what is my philosophy?"
+        </div>
+        <div class="float-quote">
+          "Bitch we in holiday now."
+        </div>
+        <div class="float-quote">
+          "I want her to understand I care about her soul."
+        </div>
+        <div class="float-quote">
+          "Since she moves forward, I also wanna move forward."
+        </div>
+        <div class="float-quote">
+          "I wanna represent myself with a white rose with some spikes on the stem of it."
+        </div>
+        <div class="float-quote">
+          "am willing to die for this shit"
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Built from a diary. Made with <span>☽</span> and honest nights.<br>
+  <span>Nasrallah</span> · Tlemcen, Algeria · 2026</p>
+</footer>
+
+<script>
+  /* ── TYPING TAGLINE ── */
+  const lines = [
+    "Unbreakable. Alhamdulilah.",
+    "Spirituality × Motivation × Existence.",
+    "The night is where life starts for me.",
+    "I just tripped. I didn't fail.",
+    "كم أنت محسن يا نصر الله"
+  ];
+  let li = 0, ci = 0, deleting = false;
+  const el = document.getElementById('tagline');
+
+  function type() {
+    const line = lines[li];
+    if (!deleting) {
+      ci++;
+      el.innerHTML = line.slice(0, ci) + '<span class="cursor">|</span>';
+      if (ci === line.length) { deleting = true; setTimeout(type, 1800); return; }
+    } else {
+      ci--;
+      el.innerHTML = line.slice(0, ci) + '<span class="cursor">|</span>';
+      if (ci === 0) { deleting = false; li = (li + 1) % lines.length; }
+    }
+    setTimeout(type, deleting ? 40 : 75);
+  }
+  type();
+
+  const dhikrLines = [
+    'سُبْحَانَ اللَّهِ',
+    'الْحَمْدُ لِلَّهِ',
+    'اللَّهُ أَكْبَرُ',
+    'لَا إِلٰهَ إِلَّا اللَّهُ',
+    'سُبْحَانَ اللهِ وَبِحَمْدِهِ',
+    'سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ',
+  ];
+  const hadiths = [
+    {
+      ar: 'إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى.',
+      en: 'Actions are judged by intentions, and everyone will be rewarded according to his intention.'
+    },
+    {
+      ar: 'المُؤْمِنُ الْقَوِيُّ خَيْرٌ وَأَحَبُّ إِلَى اللَّهِ مِنَ الْمُؤْمِنِ الضَّعِيفِ، وَفِي كُلٍّ خَيْرٌ.',
+      en: 'The strong believer is better and more beloved to Allah than the weak believer, while there is good in both.'
+    },
+    {
+      ar: 'مَنْ لَا يَرْحَمُ النَّاسَ لَا يَرْحَمْهُ اللَّهُ.',
+      en: 'Whoever does not show mercy to people, Allah will not show mercy to him.'
+    },
+    {
+      ar: 'خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ.',
+      en: 'The best of you are those who learn the Quran and teach it.'
+    },
+    {
+      ar: 'لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ.',
+      en: 'None of you truly believes until he loves for his brother what he loves for himself.'
+    },
+  ];
+
+  const heroDhikr = document.getElementById('heroDhikr');
+  const hadithText = document.getElementById('hadithText');
+  const hadithTranslation = document.getElementById('hadithTranslation');
+
+  function setRandomDhikr() {
+    if (heroDhikr) {
+      heroDhikr.style.opacity = '0';
+      setTimeout(() => {
+        heroDhikr.textContent = dhikrLines[Math.floor(Math.random() * dhikrLines.length)];
+        heroDhikr.style.opacity = '0.92';
+      }, 350);
+    }
+  }
+
+  function showRandomHadith() {
+    if (hadithText && hadithTranslation) {
+      const hadith = hadiths[Math.floor(Math.random() * hadiths.length)];
+      hadithText.textContent = hadith.ar;
+      hadithTranslation.textContent = hadith.en;
+    }
+  }
+
+  setRandomDhikr();
+  showRandomHadith();
+  setInterval(setRandomDhikr, 7000);
+
+  /* ── SCROLL REVEAL ── */
+  const revealEls = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => obs.observe(el));
+
+  /* ── JOURNAL TOGGLE ── */
+  function toggleEntry(header) {
+    const card = header.parentElement;
+    card.classList.toggle('open');
+  }
+
+  /* ── SKILL BAR ANIMATE ON SCROLL ── */
+  const fills = document.querySelectorAll('.skill-fill');
+  const skillObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.animationPlayState = 'running';
+        skillObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  fills.forEach(f => {
+    f.style.animationPlayState = 'paused';
+    skillObs.observe(f);
+  });
+
+  function switchSpotifyPlaylist(playlistId) {
+    const iframe = document.getElementById('spotifyIframe');
+    if (iframe) {
+      iframe.src = `https://open.spotify.com/embed/playlist/${playlistId}?utm_source=generator`;
+    }
+  }
+
+  /* ── THEME SWITCHER ── */
+  const themeSelect = document.getElementById('themeSelect');
+  const savedTheme = localStorage.getItem('pageTheme') || 'dark';
+  const themes = ['dark', 'light', 'redblack', 'silverblue', 'yellowblack'];
+
+  const setTheme = (theme) => {
+    themes.forEach(name => document.body.classList.remove(`theme-${name}`));
+    if (theme !== 'dark') {
+      document.body.classList.add(`theme-${theme}`);
+    }
+    themeSelect.value = theme;
+    localStorage.setItem('pageTheme', theme);
+  };
+
+  setTheme(savedTheme);
+
+  themeSelect.addEventListener('change', (event) => {
+    setTheme(event.target.value);
+  });
+</script>
+</body>
+</html>
